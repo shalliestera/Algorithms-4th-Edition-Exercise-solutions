@@ -4,5 +4,6 @@
 原书的**部分**解法在官方网站有
 http://algs4.cs.princeton.edu/code/
 
--[ ]1.1 [link]
--[ ]1.2 [link]
+## 目录 ##
+- [ ] 1.1 [link]
+- [ ] 1.2 [link]

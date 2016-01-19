@@ -1,19 +1,19 @@
 # 练习的解法 #
 
-1.1.1 
+## 1.1.1 ##
 * a.  7
   * 因为是整数除法
 * b.  200.0000002
 * c.  true
   * && 的优先级最高，||次之，原式化为 false || true，结果是true
   
-1.1.2
+## 1.1.2 ##
 * a.  double  1.618
 * b.  double  10.0
 * c.  boolean true
 * d.  String  "33"
 
-1.1.3  
+## 1.1.3 ##
 `Foo.java`
 ```java
 class Foo	//类名必须和文件名相同
@@ -49,13 +49,13 @@ class Foo	//类名必须和文件名相同
 }
 ```
 
-1.1.4
+## 1.1.4 ##
 * a.  then是多余的，java没有这个关键词
 * b.  `a > b`必须用圆括号包围
 * c.  正确
 * d.  `c = 0`后应当加一个`;`
 
-1.1.5  
+## 1.1.5 ##
 `IsBetweenZeroAndOne.java`
 ```java
 class IsBetweenZeroAndOne
@@ -85,7 +85,7 @@ class IsBetweenZeroAndOne
 }
 ```
 
-1.1.6  
+## 1.1.6 ##
 * 总共会打印16次，i∈[0,15]
 * f变成f和g的和
 * g变成之前的f
@@ -125,8 +125,8 @@ class WillPrintWhat
 }
 ```
 
-1.1.7
-* a.  `存疑`
+## 1.1.7 ##
+* a.  `**存疑**`
 * b.  499500
   * 外层循环执行999次，i∈[1,1000)
   * 内层循环执行i次，每次执行时sum自增1，即循环完毕sum自增i
@@ -137,9 +137,29 @@ class WillPrintWhat
   * 内层循环执行1000次，每次执行时sum自增1，即循环完毕sum自增1000
   * 综上所述，sum=9*1000=9000
   
-1.1.8
+## 1.1.8 ##
 * a.  b
-* b.  bc
+* b.  ~~bc~~
+	* 经验证，win10下是 `197`
 * c.  e
+以下代码保存为`WillPrintWhat118.java`后编译运行
+```java
+class WillPrintWhat118
+{
+	public static void main(String[] args)
+	{
+		System.out.println('b');
+		System.out.println('b' + 'c');
+		System.out.println((char)('a' + 4));
+		//额外
+		System.out.println('a' + 4);
+		System.out.println("a" + 4);
+		System.out.println(4 + 'a');
+		System.out.println(4 + "a");
+	}
+}
+```
+* **额外**这条的结果是`101`、`a4`、`101`、`4a`
+* 单引号（字符）双引号（字符串）有别
 
-1.1.9
+## 1.1.9 ##

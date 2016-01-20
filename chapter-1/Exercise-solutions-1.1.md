@@ -451,3 +451,83 @@ class Histogram
   * 因为题目有**歧义**，替换后的不做了。
 
 ## 1.1.19 ##
+**执行中 20:37**
+
+更好的实现如下（在N为`93`时，结果溢出成**负数**了）
+```java
+public class FabonacciBetter
+{
+	public static long[] F(int N)
+	{
+		long[] a = new long[N];
+
+		if (N == 0)
+		{
+			a[0] = 0;
+			return a;
+		}
+		else if (N == 1)
+		{
+			a[0] = 0;
+			a[1] = 1;
+			return a;
+		}
+
+		a[0] = 0;
+		a[1] = 1;
+		for (int i = 2; i < N; i++)
+		{
+			a[i] = a[i-2] + a[i-1];
+		}
+		return a;
+	}
+
+	public static void main(String[] args)
+	{
+		int N = 100;
+		long[] fb = new long[N];
+		fb = F(N);
+		for (int i = 0; i < N; i++)
+		{
+			System.out.println(i + " " + fb[i]);
+		}
+	}
+}
+```
+## 1.1.20 ##
+**解法不明**
+
+## 1.1.21 ##
+**解法不明***
+
+## 1.1.22 ##
+* 1.1.6.4在第`15`页
+* 暂时不知道怎么解
+
+## 1.1.23 ##
+**解法不明**
+
+## 1.1.24 ##
+```java
+class Euclid
+{
+	public static int gcd(int p, int q)
+	{
+		System.out.printf("%s = %d, %s = %d\n", "p", p, "q", q);
+		if (p % q == 0)
+			return q;
+		else
+			return gcd(q, p%q);
+	}
+
+	public static void main(String[] args)
+	{
+		int n1 = Integer.parseInt(args[0]);
+		int n2 = Integer.parseInt(args[1]);
+
+		System.out.println(gcd(n1, n2));
+	}
+}
+```
+
+## 1.1.25 ##

@@ -360,6 +360,94 @@ class PrintTwoDimensionalArrayTransposition
 
 ## 1.1.14 ##
 * 题目的意思是不能直接用Math库算。
+* 采用按位右移的方法算出N的二进制形态的位数
+* 结果是小于log<sub>2</sub>N的的最大整数。
 ```java
+class NotMoreThanlog2N
+{
+	public static int lg(int N)
+	{
+		// 如果N小于0，会返回-1
+		int count = 0;
+		while (N > 0)
+		{
+			N >>= 1;
+			++count;
+		}
+		return count - 1;
+	}
 
+	public static void main(String[] args)
+	{
+		int num = Integer.parseInt(args[0]);
+
+		System.out.println(lg(num));
+	}
+}
 ```
+
+## 1.1.15 ##
+**java的数组有一个length属性，之前的解题不知道它，没有用过。**
+```java
+import java.util.Random;	//Random.nextInt()
+import java.util.Arrays;	//Arrays.sort()
+
+class Histogram
+{
+	public static int[] histogram(int[] a, int M)
+	{
+		int[] answer = new int[M];
+
+		for (int i = 0; i < a.length; i++)
+		{
+			answer[a[i]]++;
+		}
+		return answer;
+	}
+
+	public static void main(String[] args)
+	{
+		Random rand = new Random();
+
+		int max = 11;
+		int[] arr = new int[max];
+		for (int i = 0; i < arr.length; i++)
+		{
+			arr[i] = rand.nextInt(max);
+		}
+
+		// sort
+		System.out.printf("%s\n", "sorted array");
+		Arrays.sort(arr);
+		for (int i = 0; i < arr.length; i++)
+		{
+			System.out.printf("%d ", arr[i]);
+		}
+
+		System.out.printf("\n%s\n", "histogram");
+		int len = 11;
+		int[] test = histogram(arr, len);
+		for (int i = 0; i < test.length; i++)
+		{
+			System.out.printf("%d ", test[i]);
+		}
+	}
+}
+```
+
+## 1.1.16 ##
+`\"31136112246\"`
+
+## 1.1.17 ##
+这段代码中的基础情况永远不会被访问。调用exR2(3)会产生调用exR2(0)、exR2(-3)和exR2(-6)，
+循环往复直到发送StackOverFlowError。
+
+## 1.1.18 ##
+* 结果是`50`
+  * ![1.1.18 solution png](./images/solution-1-1-18.png)
+  * 改变代码（所有`+`替换为`*`）后，结果是`536870912`
+  * 只有`a+a`替换为`a*a`，结果是`65811`
+* mystery(3, 11)结果是`33`
+  * 因为题目有**歧义**，替换后的不做了。
+
+## 1.1.19 ##

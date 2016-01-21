@@ -531,4 +531,4 @@ class Euclid
 ```
 
 ## 1.1.25 ##
-![用数学归纳法证明欧几里得算法](.\images\solution-1-1-25-Euclidean-algorithm-proved-by-mathematical-induction.jpg)
+![用数学归纳法证明欧几里得算法](./images/solution-1-1-25-Euclidean-algorithm-proved-by-mathematical-induction.jpg)

@@ -444,7 +444,7 @@ class Histogram
 
 ## 1.1.18 ##
 * 结果是`50`
-  * ![1.1.18 solution png](./images/solution-1-1-18.png)
+  * ![1.1.18 solution png](./images/solution-1-1-18.jpg)
   * 改变代码（所有`+`替换为`*`）后，结果是`536870912`
   * 只有`a+a`替换为`a*a`，结果是`65811`
 * mystery(3, 11)结果是`33`
@@ -531,4 +531,4 @@ class Euclid
 ```
 
 ## 1.1.25 ##
-**此处需要输血归纳法**
+![用数学归纳法证明欧几里得算法](.\images\solution-1-1-25-Euclidean-algorithm-proved-by-mathematical-induction.jpg)

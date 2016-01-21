@@ -498,7 +498,7 @@ public class FabonacciBetter
 **解法不明**
 
 ## 1.1.21 ##
-**解法不明***
+**解法不明**
 
 ## 1.1.22 ##
 * 1.1.6.4在第`15`页
@@ -514,8 +514,8 @@ class Euclid
 	public static int gcd(int p, int q)
 	{
 		System.out.printf("%s = %d, %s = %d\n", "p", p, "q", q);
-		if (p % q == 0)
-			return q;
+		if (q == 0)
+			return p;
 		else
 			return gcd(q, p%q);
 	}
@@ -531,3 +531,4 @@ class Euclid
 ```
 
 ## 1.1.25 ##
+**此处需要输血归纳法**

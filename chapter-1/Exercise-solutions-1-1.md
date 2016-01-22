@@ -501,7 +501,7 @@ public class FabonacciBetter
 **解法不明**
 
 ## 1.1.22 ##
-* 1.1.6.4在第`15`页
+* 1.1.6.4在第`15`页，本题在第`35`页
 * 暂时不知道怎么解
 
 ## 1.1.23 ##
@@ -532,3 +532,19 @@ class Euclid
 
 ## 1.1.25 ##
 ![用数学归纳法证明欧几里得算法](./images/solution-1-1-25-Euclidean-algorithm-proved-by-mathematical-induction.jpg)
+
+## 1.1.26 ##
+![将三个数字排序](./images/solution-1-1-26.jpg)
+
+## 1.1.27 ##
+![二项分布。递归调用次数](./images/solution-1-1-27.jpg)
+图片不对，应该是2<sup>100</sup> + 2<sup>50</sup>
+**更好的实现**
+
+## 1.1.28 ##
+**解法不明**
+
+## 1.1.29 ##
+**解法不明**
+
+## 1.1.30 ##
